@@ -1,0 +1,260 @@
+\documentclass{article}
+\usepackage{amssymb,amsmath,graphicx,subcaption,color}
+%\usepackage{epsfig,lscape,color,eucal,bm,epsfig,hyperref}
+\usepackage{xr}
+\externaldocument[M-]{Paper}
+
+\usepackage{fullpage}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+%\fancyfoot[C]{L. King \emph{et al.}} % other info in "inner" position of footer line
+
+%\renewcommand{\thesection}{S\arabic{section}}
+\setcounter{page}{2}
+%\renewcommand{\thepage}{\arabic{page}SI}
+%\renewcommand{\figurename}{Supplementary Figure}
+% \renewcommand{\thefigure}{S\arabic{figure}}
+\def\url#1{\expandafter\string\csname #1\endcsname}
+
+\def\av#1{\left\langle#1\right\rangle}
+\def\to{\rightarrow}
+\def\V#1{{\rm Var}\left[#1\right]}
+\def\S#1{{\rm Std}\left[#1\right]}
+\def\C#1{{\rm Cov}\left[#1\right]}
+\def\E#1{{\rm E}\left[#1\right]}
+\def\trm#1{\textrm{#1}}
+\newcommand{\Es}[2]{\trm{E}_{#1}\left[#2\right]}
+\newcommand{\Vs}[2]{\trm{Var}_{#1}\left[#2\right]}
+\def\di{\partial}
+\def\dbar#1{\overline{\overline{#1}}}
+\def\thh{\hat{\theta}}
+\def\Pr#1{\textrm{Prob}\left\{#1\right\}}
+
+\DeclareMathOperator{\Mat}{Mat}
+
+\begin{document}
+
+\centerline{\textbf{\Large{...}}}
+~\\~\\
+
+\centerline{Y-linked regulatory variation and differential protein binding in \textit{Drosophila melanogaster}}
+
+\centerline{OR Y chromosome causing differences in chromatin protein binding profiles between Y introgression lines of Drosophila melanogaster. }}
+
+\section{Introduction}
+
+
+%http://www.nature.com/nrg/journal/v14/n2/box/nrg3366_BX2.html Bachtrog, 2013 %<-READ THIS, and citations 31-33
+%http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3219962/ Dittmer and Misteli, 2011
+%http://www.ncbi.nlm.nih.gov/pubmed/12921235 Gruenbaum et al, 2003
+%http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001376 Paredes et al, 2011
+% http://www.pnas.org/content/106/42/17829 Paredes and Maggert, 2009
+
+%Long assumed to be genetically inert, the \textcolor{blue}{\textit{Drosophila}} Y chromosome has been shown to have epigenetic effects on the expression of hundreds of X-linked and autosomal genes throughout the genome, referred to as Y-linked regulatory variation (YRV) (Lemos et al. 2008, 2010). 
+The \textcolor{blue}{\textit{Drosophila} Y chromosome is heterochromatic and very degenerated, mainly consisting of large blocks of repetitive DNA with fewer than 20 functional genes (Bachtrog, 2013).  Yet, it }has been shown to have epigenetic effects on the expression of hundreds of X-linked and autosomal genes throughout the genome, referred to as Y-linked regulatory variation (YRV) (Lemos et al. 2008, 2010).  \textcolor{blue}{There is evidence that Y-regulated genes also include genes for adaptive traits. For example, introgression of \textit{D. sechellia} or \textit{D. simulans} Y chromosomes into a common laboratory \textit{D. simulans} background reveals the existence of Y-linked regulatory divergence}, which affects male-biased or testes-specific genes and those involved in male reproductive traits \textcolor{blue}{(Sackton, 2011).   In addition, it has been suggested that the extremely low level of polymorphism in the African \textit{D. melanogaster} Y chromosome is a result of recent selective sweeps, possibly of Y factors that regulate gene expression elsewhere in the genome (Larracuente and Clark, 2013).}  %differences in the variability of Y chromosomes in African and \textcolor{blue}{non-African} populations of \textit{D. melanogaster} have been suggested to be linked to adaptive evolution of the African Y chromosome through Y chromosome polymorphism and the differential effects on gene expression (Larracuente and Clark, 2013).Y-linked adaptation in Africa could be a result of the Y chromosome's effect on thermotolerance. 
+%These discoveries suggest the hypothesis that the Y chromosome is not merely a passive carrier of male fertility factors, but may contribute actively to epigenetic regulation of genes for adaptive traits. 
+
+\textcolor{blue}{A meta-analysis has showed that genes} affected by YRV are more likely to be associated with the nuclear lamina (NL) \textcolor{blue}{(Sackton and Hartl, 2013).  Located near the inner nuclear membrane and the peripheral chromatin,} the nuclear lamina is an extensive protein network that contributes to nuclear structure and function \textcolor{red}{what does it mean to contribute to nuclear function?}. %The fibrous proteins that together with membrane-associated proteins form the nuclear lamina, 
+\textcolor{blue}{Mutated or lost nuclear lamina genes cause a wide range of phenotypes,} which indicates that they are involved in regulatory functions \textcolor{red}{citation? Gruenbaum et al, 2003? }.  The Y chromosome and Lamina Associated Domains %(LADs)
+of the genome have several characteristics in common: AT-rich, low levels of gene expression, and replicate in late S-phase \textcolor{red}{Are we pointing this out as support for the heterochromatic sink model?}. The main components of the nuclear lamina are intermediate filament proteins called Lamins. One lamin gene (LAM) has been identified in \textit{D. melanogaster}. 
+
+
+Genes affected by YRV are \textcolor{blue}{also} more likely to be in condensed ``black" or ``blue" intercalary \textcolor{red}{(?)} heterochromatin (Filion et al. 2010), % \textcolor{blue}{They are also more likely to be associated with the nuclear lamina than non-YRV genes (Sackton and Hartl, 2013).  %vary in expression within and between species, and have tissue-specific expression (Sackton and Hartl, 2013).  
+\textcolor{blue}{where both D1 and LAM proteins are highly abundant.} %, and LAM proteins line the nuclear envelope (Dittmer and Misteli, 2011).}  
+The D1 protein \textcolor{blue}{bears 10 AT-hooks and} binds both euchromatic and heterochromatic satellite repeats. Aulner et al. (2002) suggested that the heterochromatic AT rich regions might serve as storage sites for D1 proteins with the consequence of affecting the distribution of the protein elsewhere in the genome. The functions of the D1 protein are not clear and the available research shows conflicting results when it comes to the necessity of this protein for development (Aulner et al., 2002; Weiler and Chatterjee et al., 2009), although the evidence for functional redundancy \textcolor{blue}{with the products of the \textit{Drosophila} HMGB genes supports the view that it is dispensable (Weiler and Chatterjee, 2009).}  %with other genes seems more convincing (Weiler and Chatterjee, 2009). Similar genes in mammals, HMGA1 and HMGA2, are also not necessary for viability. 
+%The D1 protein in \textit{D. melanogaster} has 10 AT-hooks. 
+\textcolor{blue}{Based on their similarity with mammalian HMGA proteins, D1 might regulate the activity of many genes as architectural proteins (Reeves and Beckerbauer, 2001)}.  %The D1 proteins might have the same regulatory effect on the activity of many different genes the same way as HMGA proteins have as architectural proteins (Reeves and Beckerbauer, 2001). 
+Weiler and Chatterjee (2009) also concluded that the D1 has no effect on \textcolor{blue}{position-effect variegation}. \textcolor{red}{I'm confused, because in the Chatterjee abstract, it says: "My tests for an effect of D1 mutations on PEV revealed that it is not a suppressor of variegation, as concluded by other investigators. In fact, the consequence of loss of D1 on one of six variegating rearrangements tested, T(2;3)SbV, was dominant enhancement of PEV, suggesting a role for the protein in euchromatic chromatin structure and/or transcription." If loss of D1 == enhancement, why does D1!=suppression?)} Many transcription start sites (TSS) have AT-rich stretches and D1 might therefore play a role in gene regulation by binding to TSS. \textcolor{red}{citation?}
+
+
+\textcolor{blue}{Because the Y chromosome predominantly affects the expression of genes located in repressive chromatin contexts, it has been posited that the mechanism of this modulation of expression is the modification of heterochromatin state at these loci. It is possible that the Y chromosome acts as a protein sink, affecting the relative number of proteins that can bind to the autosomes (Sackton and Hartl, 2013).  The Y chromosome might also affect the spatial configuration of the chromosomes in the nucleus, as binding by proteins associated with the nuclear lamina reduces gene expression.}  
+
+In this study we screened two African and two European Y introgression lines for variation in chromatin protein binding using DamID in transgenic flies. DamID is a method for large-scale mapping of \textit{in vivo} protein-genome interactions developed by a the van Steensel lab in the Netherlands (\textcolor{red}{citation}).  %http://research.nki.nl/vansteensellab/index.htm). 
+\textcolor{blue}{ The DamID method involves the \textit{Escherichia coli} protein DNA adenine methyltransferase (DAM), which can be fused to a protein of interest, in this case Lam or D1.  The adenines in DNA surrounding these binding sites are then methylated by the DAM protein.}  \textcolor{blue}{ Adenine-methylated DNA fragments can then be isolated,} sequenced, and aligned to the Drosophila melanogaster reference genome to characterize the pattern of binding.  \textcolor{blue}{These methylated fragments are indicative of binding, as} methylation of adenine is thought to be largely absent in eukaryotes, although low levels of adenine methylation has been found in a few eukaryotic species (\textit{Drosophila}, \textit{C. elegans}, and \textit{Chlamydomonas}).  %identified (http://www.ncbi.nlm.nih.gov/pubmed/16938559).}.
+%We crossed transgenic flies that contain \textcolor{blue}{Lam or D1} \textcolor{red}{is it OR or AND?} fused to the DamID protein to Y introgression lines. The DamID protein will methylate regions of the genome where these target proteins bind. The methylated sites can then be pulled down, sequenced, and aligned to the Drosophila melanogaster reference genome to characterize the pattern of binding. 
+ 
+ \textcolor{blue}{We are interested in differences in the binding of the chromatin-related proteins between the different Y introgression lines, and whether these are correlated with differences in gene expression in the Y introgression lines.  }\textcolor{red}{Do we want to add something like "Our data allows us to reject the simplest forms of the heterochromatic sink model", or something about rRNA?}
+
+
+
+
+
+
+%The gene-poor \textit{Drosophila melanogaster} Y chromosome substantially affects gene expression across the rest of the genome \textcolor{red}{(how much?)}, but the mechanism by which this occurs is not well understood.  Previous studies have shown that Y-regulated genes are more likely to be in repressive chromatin contexts (BLUE and BLACK) than non-YRV genes, and are more likely to be associated with the nuclear lamina (Hartl and Sackton, 2013).  It has therefore been posited that the Y chromosome is able to influence gene expression at certain loci on the X chromosome and the autosomes by modifying heterochromatin state at these loci \textcolor{red}{why does this conclusion make sense? Couldn't it be that the mechanism which allows the Y to affect gene expression only works in repressive chromatin contexts?}.  It is possible that the Y chromosome acts as a protein sink, affecting the relative number of proteins that can bind to the autosomes (Sackton and Hartl, 2013).  The Y chromosome might also affect the spatial configuration of the chromosomes in the nucleus, as binding by proteins associated with the nuclear lamina reduces gene expression (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2265557/, Reddy et al, 2008). \textcolor{red}{(but it?s confusing, in that same mechanism that would mean y chromosome is gene poor, seems like the y shouldn?t have that much of an influence)}
+
+%The BLUE and BLACK heterochromatin contexts, in which YRV genes are predominantly located \textcolor{red}{is it predominantly?}, are both marked by D1 and Lamin (Lam) proteins, among others (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3119929/).  D1 is an AT hook-bearing protein that mostly localizes to AT-rich satellite repeats found in the centromeric heterochromatin of a few different chromosomes, including the Y chromosome.  Because of this, we expect the Y chromosome to potentially impact the distribution of D1 available to bind across the genome, and therefore gene expression levels across the genome.  \textcolor{red}{so do some strains have significantly lower D1 binding than other strains across the genome?  also, wouldn?t this imply a random process?  why would we have expected differential binding at the region where Lam also differentially binds?  this seems to not be targeted at all, whereas it is clear that there is some targeting going on.  You could check if all AT rich regions have decreased or increased gene expression levels.} Lam is associated with the nuclear lamina (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3219962/). If the Y chromosome affects the spatial configuration of the chromosome in the nucleus, then we would expect to see differential binding by Lam.  This effect can be direct, if the Y chromosome is able to somehow push certain regions to the nuclear periphery.  It can also be indirect, if the Y chromosome affects gene expression in certain regions, which if suppressed will be relegated to the nuclear envelope.
+
+
+\section{Materials and Methods}
+
+\subsection{Fly lines, fly husbandry and crossing schemes}
+Y introgression/substitution lines were established from four geographically distinct \textit{Drosophila melanogaster} populations: two French (Fr188 and Fr89) and two Zambian \textcolor{red}{is it Zambian? all along I thought it was Zimbabwean based on the Zi and the Larracuente paper!} (Zi238 and Zi2557), according to Lemos et al. (2008, 2010). Wild type males from France and Zambia were crossed with females of the BL4361 fly strain from Bloomington Drosophila Stock Center and then backcrossed for X generations to obtain different Y chromosomes introgressed into a common isogenic background \textcolor{red}{(Figure X)}. The 4361 stock is expected to contain very little genetic variation, and in addition upon receipt was subjected to four additional generations of brother-sister mating to reinforce homozygosity of the genomic background. The 4361 stock inhabits four recessive markers that are used to select the flies with the correct genomic background after backcrossing. These markers are yellow (y1; X chromosome), brown (bw1; chromosome 2), ebony (e1; chromosome 3), and cubitus interruptus and eyeless (ci1, ey1; chromosome 4).  All crosses for each Y-chromosome substitution were carried out with 15-20 vials with multiple parents per vial; This resulted in several Y-chromosome substituted males ($>$30) per line which were subsequently pooled together to give rise to a stable Y-chromosome substitution line.  
+
+\textcolor{red}{DamID transgenic lines crossed with Y introgression lines. Lene check notes on the crossing scheme and make a figure.(?)}
+Flies were kept at 24h light-, temperature-, and humidity-controlled incubators on standard cornmeal medium. For gene expression analyses, newly emerged flies were collected and aged for 3 days at 25$^{\circ}$C, after which they were flash-frozen in liquid nitrogen and stored at -80$^{\circ}$C.
+
+\subsection{Generation of transgenic lines}
+The phiC31 unidirectional site-specific recombination method was used to make transgenic flies containing the protein of interest - D1 and LAM - fused with a DNA adenine methylase (DAM) from E. coli. An additional transgenic line containing only the DAM protein (DAM-only) was used as a control. All three lines were produced by Best Gene Inc.; LAM and DAM-only transgenic stocks provided by the Van Steensel Lab at the Netherlands Cancer Institute, while the D1 transgenic stock was provided by the Hartl Lab at Harvard University. 
+The BDSC strain #24482 of the FlyC31 system, with insertion site 51C on chromosome 2, was used for the transgenesis. In short, the gene of interest was amplified with primers that have restriction enzyme cut sites. The plasmid vector and the cDNA gene fragment were then digested with two restriction enzymes, and the gene fragment was subesquently ligated into the plasmid with T4 DNA ligase. One Shot® chemically competent E. coli cells were transformed with the fusion plasmid and plated onto agar plates containing ampicillin for selection of clones. The next day bacterial clones were tested with PCR to check that the protein of interest had ligated into the vector. The clones that gave positive PCR results were chosen and plasmids were isolated with Plasmid DNA Purification Kit (Qiagen). The isolated plasmids were sent to Best Gene Inc. for transgenesis into BDSC lines #24482 embryos.
+The plasmid vectors - p-attB-NDam[4-HT-intein@L127C]Myc for the transgenesis with the LAM and D1 proteins, and p-attB-Dam[4-HT-intein@L127C]Myc[closed] for the DAM-only controls - was constructed by the van Stenseel Lab (Filion et al. 2010, van Bemmel et al. 2010). These DamID transgenic lines were then crossed with the Y introgression lines.
+
+\subsection{DamID}
+DamID was performed as in Vogel et al. (2007) with minor adjustments. In brief, genomic DNA was isolated from the DamIDxY lines by using the DNeasy Blood and Tissue Kit (Qiagen). To obtain the methylated fragments, genomic DNA was then digested with the restriction enzyme DpnI which cleaves only Gm6ATC sites, not unmethylated sites. Then a double-stranded adaptor oligonucleotide was ligated to the cleaved DNA ends. Following ligation, the DNA is treated with the restriction enzyme DpnII which cuts only unmethylated GATC sites. The sequential use of DpnI and DpnII creates a double selection for methylated DNA fragments: only methylated GATC sequences are cut by DpnI and therefore ligated to the adaptors, and only fragments in which all GATCs are methylated are resistant to degradation by DpnII and can therefore be amplified. The methylated fragments are then amplified by PCR using primers that are complementary to the adaptor sequence. After amplification the fragments are analyzed on an agarose gel. A smear of genomic methylated fragements will be visible on the gel, in addition to bands from amplified methylated plasmid DNA. The PCR products were purified with QIAquick PCR Purification Kit (Qiagen) and used for next-generation sequencing.
+\textcolor{red}{Something about DamID data available for carcass and testes only AND whole fly.}
+
+\subsection{DamID and Next-Generation Sequencing}
+The DNA content of the PCR products was measured with Qubit and 200ng (when available) was used as input for the Illumina Next Generation Sequencing protocol using the TruSeq Nano DNA Library Prep Kit. The DNA content of the testis samples was sometimes lower than 200 ng due to limitation of available tissue. The samples were transferred to crimp-cap MicroTube ASA vials for shearing of the DNA in Covaris. The settings used were duty cycle = 10%, intensity = 5, cycles/burst = 200, time = 45 sec as recommended by the Illumina Nano Kit.
+
+\subsection{Gene expression}
+Total RNA was extracted with TRIzol (Invitrogen) and treated with DNaseI according to standard protocols. RNA extractions were kept at -80oC. RNA-seq libraries were prepared using the Illumina TruSeq RNA Library Prep Kit v2 according to the manufacturer's protocol. The samples were sequenced on an Illumina HighSeq 2000/2500 machine.
+\textcolor{red}{Something about gene expression data available for carcass and testes only (not whole fly)}
+
+
+\subsection{Bioinformatic analysis}
+
+\subsubsection{Data availability}
+DamID sequences and expression data have been deposited in NCBI's Gene Expression Omnibus and are accessible through GEO Series accession number \textcolor{red}{......}
+
+\subsubsection{\textcolor{red}{Data preprocessing}}
+
+\subsubsection{Gene expression and Protein binding}
+
+%We create Y introgression lines with a sample of four Y chromosomes, two from Zimbabwe \textcolor{red}{or was it Zambia?} (257 and 238) and two from France (188 and 89).   \textcolor{red}{This was already talked about}
+\textcolor{blue}{Using our RNA-seq data, we first quantified the abundance of transcripts using the program kallisto \textcolor{red}{citation}.  The first step was to make a transcriptome index using a transcriptome file \textcolor{red}{How do I specify which one without simply copying the link?}%(ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/fasta/dmel-all-transcript-r6.07.fasta.gz). 
+Using this transcriptome index and our single-end reads, we were then able to quantify the abundances of transcripts for each strain. In calculating the abundances of transcripts, we used the following parameters for each strain: the average fragment length for that strain, 30 as an estimate of the standard deviation for each strain, and 100 bootstrap samples.}
+\textcolor{blue}{Our first aim was to find differentially expressed genes across Y introgression lines.  To this end, we quantify abundances of non-mitochondrial transcripts from RNA-sequence data from the testes and the carcass using the program kallisto.  We discard strains with too many undetected transcripts.  We then use the library DESeq2 in R \textcolor{red}{(citation)} for differential expression analysis.  }
+
+
+%We use DamID to identify regions of the genome in each line that are differentially bound, conditioning on the tissue and the protein.   We consider three different tissues, carcass, testes and whole-fly.   \textcolor{red}{This was already talked about}
+
+\textcolor{blue}{We also analyze protein binding data using the DESeq2 library. } \textcolor{red}{Do I have to specify things, like "We find the regions where there are significant protein by line interactions by doing a negative binomial likelihood ratio test."}
+
+
+
+\section{Results}
+
+\subsection{Gene expression}
+
+\textcolor{blue}{The biggest differences in gene expression are due to tissue type (carcass vs testes).  As a result, we made the conservative choice to study carcass and testes data separately.  Conditioning on carcass data, we find that there are 463 statistically significantly differentially expressed genes based on Y line.  Analysis of testes data did not show the same level of differential expression per line, with only 150 statistically significant genes.  We define statistical significance using an adjusted p-value $<.05$.  15 percent of the carcass data is low count data, relative to only 7.7 percent of the testes data, which implies that the lower number of differentially expressed genes in testes is not due to the testes data being of lower quality.  \textcolor{red}{Is this true?}.  A Fisher's exact test reveals that there is significant overlap between the differentially expressed genes found in our experiment in both carcass and testes data, and those exhibiting Y-regulatory variation as described in the meta-analysis in Sackton and Hartl (2013) (p-value$ < .001$).}
+
+\textcolor{blue}{Interestingly, this variation is not particularly structured by country - there is also significant intra-population variation (see figures \ref{fig:PCA_C_GeneExpr_463} and \ref{fig:PCA_T_GeneExpr_150}).  Pairwise comparisons using a LRT %(with the comparison lane1 vs lane2 as a control) 
+reveal that Zi257 is very different from Zi238 in carcass data, with 342 differentially expressed genes at the .05 significance level.  The greatest number of differentially expressed genes for all other pairwise comparisons is 73, although there is some fluctuation in the quality of the data, as exhibited by the number of low counts.}  \textcolor{red}{So if there are fluctuating numbers of low counts, can we even be making these comparisons?} %, and to some extent from Fr188 and Fr89. All other comparisons show much smaller numbers of differences.  This holds even when a regularized log transformation, or a variance stabilizing transformation, is applied.}
+
+\begin{figure}
+\center
+\includegraphics[scale = .65]{PCA_C_GeneExpr_463}
+\caption{PCA of regularized log transformed gene expression data for the 463 most differentially expressed genes in carcass.} 
+\label{fig:PCA_C_GeneExpr_463}
+\end{figure}
+
+\begin{figure}
+\center
+\includegraphics[scale = .65]{PCA_T_GeneExpr_150}
+\caption{PCA of regularized log transformed gene expression data for the 150 most differentially expressed genes in carcass.} 
+\label{fig:PCA_T_GeneExpr_150}
+\end{figure}
+
+\textcolor{blue}{In order to test whether inter-population variation is a driver of the variation seen in differentially expressed genes, we bootstrap our 463  differentially expressed genes by line 10000 times in the carcass data. We then restrict our analysis to only pairs of lines (e.g. Fr188 vs Fr89; Fr188 vs Zi257; etc ... ), and run k-means clustering with k=2.  Because k-means is based off of Euclidean distance, we transform the counts beforehand using a regularized log transformation.  We calculate the accuracy of the clustering algorithm in separating lines of same and of different countries over bootstrapped samples of differentially expressed genes, and find that our analysis clearly separates the two Zambian strains (Zi257 and Zi238), and Zi257 and Fr188, more than any other pair of lines (with 0 misclassifications).  Because there are not many SNPs in the African populations in Larracuente and Clark (2013), we can attribute the significant intra-population differences in gene expression in our Zambian lines to other kinds of mutational events, for example differences in the number of repetitive elements. The same pattern was not as readily available in the testes data.  In the testes data, there were no misclassifications between lines Fr188 and Fr89, though in the testes data we only bootstrapped over 150 differentially expressed genes.} 
+
+\subsection{Protein binding -- this is very preliminary -- probably not worth the read just yet}
+
+\textcolor{blue}{In carcass, testes, and whole-fly tissues, we were able to identify regions of differential binding.  Lam binding in general positively correlated across tissue types, and in particular line by tissue subsets, where Lam binds is negatively correlated to where D1 binds (see figure \ref{fig:Log2FCPairwiseCorrs}).  \textcolor{red}{break it down by heterochromatin type}.  This correlation is unexpected, because in previous work, Lam and D1 were positively correlated.  Both our pre sequencing and post sequencing suggested that D1 testes samples are of notably low quality, so we expect not to be able to draw conclusions from this.}
+
+
+\begin{figure}
+\center
+\includegraphics[scale = .65]{Log2FCPairwiseCorrs}
+\caption{ } 
+\label{fig:Log2FCPairwiseCorrs}
+\end{figure}
+
+\textcolor{blue}{Y-related tandem repeats have the strongest signal of variability, and therefore it is worth considering the possibility that some of these effects could potentially be driven by variation in Y linked transcription of non-coding RNAs.}  \textcolor{blue}{One such area is the Stellate (Ste) locus on the X chromosome, which shows differential binding for Lam in whole fly data.  Negative regulatory interaction exists between this locus and the Suppressor of Stellate Su(Ste) locus on the Y-chromosome.    When Ste is derepressed because of deficiencies is Su(Ste), males exhibit a range of defects that often lead to complete sterility.  It has been hypothesized that the Ste -Su(Ste) system is dispensable, and evolved as a parasitic system that actively maintains itself (http://www.sdbonline.org/sites/fly/dbzhnsky/stellat1.htm, Bozzetti, 1995).  In this case, two possibilities emerge that can explain the differential binding of the Lam protein to the Ste region: either the Y-chromosome suppresses expression of Ste, which because it is not expressed is relegated to the nuclear envelope, or the Y-chromosome somehow pushes the Ste locus to the nuclear envelope. }
+
+\textcolor{blue}{The 5S rRNA locus on chromosome 2R, which like Ste consists of a series of tandem repeats, is differentially bound by Lam in testes and by D1 in carcass data (see figure \ref{fig:DifferentialBinding5srRNA}).  The rRNA genes of Drosophila melanogaster (http://www.ncbi.nlm.nih.gov/pubmed/3136294) are particularly AT-rich, so we would expect strong binding by D1, but there are strains in which they are in fact very loosely bound by D1.  5S rRNA acts in collaboration with 18S rRNA and 28S rRNA to form the ribosome.  The genes encoding for these are located on the X and Y chromosomes.  Interestingly, previous research has shown that rDNA contributes to global chromatin regulation (Paredes and Maggert, 2009), and that variation in copy number affects genome-wide expression patterns, and that (Paredes et al, 2011). }
+
+\begin{figure}
+\center
+\includegraphics[scale = .65]{DifferentialBinding5srRNA}
+\caption{ } 
+\label{fig:DifferentialBinding5srRNA}
+\end{figure}
+
+\subsubsection{The heterochromatic sink model}
+
+\textcolor{blue}{The heterochromatic sink model in its simplest form suggests that the Y chromosome acts as a protein sink, which affects the distribution of chromatin states across the genome.  This yields a very clear prediction: we would expect some strains to show significantly lower levels of binding than other strains. [need to do difference]  In a more mitigated sense, we would expect the Y chromosome to have a local effect.  This again yields a clear prediction: zones of differential binding should always be lower in some strains than in others.}
+
+
+\section{Discussion}
+
+
+
+Because the Dam-fusion protein is expressed at much lower levels than the endogenous protein it is possible that the Dam-fusion complex occupies a subset of the genomic binding sites compared to the endogenous protein.
+
+Previous studies showed that variation in protein-coding regions on the Y chromosome did \textcolor{red}{. (comparison off XXY females and XX females) SU(STE) might still be transcribed in XXY context.  Not clear that Y chromo in XXY chromo is inert, but none of the protein coding regions we know are transcribed. }
+
+It is however worth considering the possibility that some of these effects could potentially be driven by variation in Y linked transcription of non-coding RNAs.  Suppressor of stellate for example effectively acts as RNAi to suppress transcription of stellate locus.  5srRNA: it?s possible that chromatin state at 5srRNA is mediated by transcription of 18S and 28S on Y chromosome.  Could be that what we?re seeing is the action of these non-coding often repetitive RNAs.
+
+
+if all driven by changes in ribosomal RNA locus.  but then the properties of the genes that are influenced by that should not be linked by common chromatin profile.
+can?t require transcription of Y linked genes, has to preferentially act on genes that share a chromatin state.  most obvious would be modification of chromatin state, but other mechanisms that we can postulate.
+
+
+\textcolor{blue}{Now that we've established differential binding, it is interesting to know how this might occur.  The heterochromatic sink model yields some predictions: Strictly less binding across the genome.  (can do differences in binding across genome).  local sink model with local structure will show less binding in all differentially bound regions.   think through this a bit more }
+
+
+\section{Notes - ignore completely}
+both our pre sequencing and post sequencing suggested that D1 testes sample are of notably low quality, so we excluded them from the analysis.
+
+heterochromatic sink model: not that there is X D1 in cell, 80% binds to Y, so if 85% binds to Y instead, then less bound across autosomes.  
+Binding affinity of D1 across genome varies.  A lot of DNA binding is reflecting 
+some relatively low affinity regions that previously would have been outcompeted by the Y now show binding, but high affinity region does not change.
+
+plot densities of log2FC change across genome for D1.  Do you get more positive for C-D1-188.
+
+If no global shift.  There could still be interactions between D1 and other factors
+Fit spline across each chromosome.  Are there large scale regions that are shifted positive or negative.  
+
+Negative correlation between D1 and Lam suggests that regions of the genome that are close to the nuclear envelope tend not to be bound by D1.
+
+Questions of negative correlation D1 and Lam.  Why not seen in previous papers? because fi you considered a single heterochromatin state, you might not get the negative correlation.  But across the genome (and heterocrhoamtin states you would).
+D1 binds in green black and blue
+Lam binds to black and blue only
+
+
+We could get the data from one of those papers that identifies where BLACK heterochromatin is.  Look just in black chromatin and see if negative correlation between D1 and Lam.  
+Genome wide presence
+
+narrow down to differentially expressed regions.  do you still see the negative correlation of D1 and Lam?
+
+cut in unix
+4 to 6
+
+Blue and Black should have skewed log2FC changes for D1 and Lam.
+Check that in black heterochromatin, both of these are skewed positive.
+
+
+
+not because of protein variation on the Y chromosome. (comparison off XXY females and XX females) SU(STE) might still be transcribed in XXY context.  Not clear that Y chromo in XXY chromo is inert, but none of the protein coding regions we know are transcribed. 
+
+Given stellate, it is worth considering the possibility that some of these effects could potentially be driven by variation in Y linked transcription of non-coding RNAs.  Suppressor of stellate for example effectively acts as RNAi to suppress transcription of stellate locus.  5srRNA: it?s possible that chromatin state at 5srRNA is mediated by transcription of 18S and 28S on Y chromosome.  Could be that what we?re seeing is the action of these non-coding often repetitive RNAs.
+
+
+if all driven by changes in ribosomal RNA locus.  but then the properties of the genes that are influenced by that should not be linked by common chromatin profile.
+can?t require transcription of Y linked genes, has to preferentially act on genes that share a chromatin state.  most obvious would be modification of chromatin state, but other mechanisms that we can postulate.
+
+
+ruby in the rough.  if you have mutations in males that are advantageous, they can rapidly fix.
+
+in local sink model, the line that has the highest binding in one region will tend to have the highest binding in every other region of the genome.  
+
+Simple global model and simple local model.  If the evidence is not consistent with prediction from simple models, not that we can rule out for rule out that some heterochromatin sink style model is happening will be more complex (i.e. proteins we didn?t measure interacting with proteins we did measure)
+
+This heterochromatin sink model, we hypothesized going into this work.  There are two relatively simple versions of this - one is global, one is local.  We can test.  Here is evidence of this test (though might be happening at same time).
+Either we find evidence for one or both of these models, or we don?t.  If we don?t, the only thing we are ruling out is these v
+
+\end{document}
